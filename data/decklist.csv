@@ -1,0 +1,222 @@
+,name,mana_cost,cmc,colors,type_line,oracle_text,produced_mana
+77,"Shizo, Death's Storehouse",,0.0,[],Legendary Land,"{T}: Add {B}.
+{B}, {T}: Target legendary creature gains fear until end of turn. (It can't be blocked except by artifact creatures and/or black creatures.)",['B']
+497,Diabolic Intent,{1}{B},2.0,['B'],Sorcery,"As an additional cost to cast this spell, sacrifice a creature.
+Search your library for a card, put that card into your hand, then shuffle.",
+533,Misinformation,{B},1.0,['B'],Instant,Put up to three target cards from an opponent's graveyard on top of their library in any order.,
+610,Deadly Rollick,{3}{B},4.0,['B'],Instant,"If you control a commander, you may cast this spell without paying its mana cost.
+Exile target creature.",
+665,Bojuka Bog,,0.0,[],Land,"This land enters tapped.
+When this land enters, exile target player's graveyard.
+{T}: Add {B}.",['B']
+903,Cabal Stronghold,,0.0,[],Land,"{T}: Add {C}.
+{3}, {T}: Add {B} for each basic Swamp you control.","['B', 'C']"
+1204,Wreck Hunter,{B}{B},2.0,['B'],Creature — Human Artificer,"Flash
+When this creature enters, choose target player. You create a tapped Powerstone token for each nonland card in that player's graveyard that was put there from the battlefield this turn. (It's an artifact with ""{T}: Add {C}. This mana can't be spent to cast a nonartifact spell."")",['C']
+1618,Arcane Signet,{2},2.0,[],Artifact,{T}: Add one mana of any color in your commander's color identity.,"['B', 'G', 'R', 'U', 'W']"
+2055,Force of Despair,{1}{B}{B},3.0,['B'],Instant,"If it's not your turn, you may exile a black card from your hand rather than pay this spell's mana cost.
+Destroy all creatures that entered this turn.",
+2295,Vat of Rebirth,{B},1.0,['B'],Artifact,"Whenever another artifact or creature you control is put into a graveyard from the battlefield, put an oil counter on this artifact.
+{2}{B}, {T}, Remove four oil counters from this artifact: Return target creature card from your graveyard to the battlefield. Activate only as a sorcery.",
+2328,Psychic Paper,{2},2.0,[],Artifact — Equipment,"As this Equipment becomes attached to a creature, choose a creature card name and a creature type.
+Equipped creature has ward {1}, it can't be blocked, and its name and creature type are the last chosen name and creature type.
+Equip {2}",
+2692,Bone Dancer,{1}{B}{B},3.0,['B'],Creature — Zombie,"Whenever this creature attacks and isn't blocked, you may put the top creature card of defending player's graveyard onto the battlefield under your control. If you do, this creature assigns no combat damage this turn.",
+2789,Diabolic Tutor,{2}{B}{B},4.0,['B'],Sorcery,"Search your library for a card, put that card into your hand, then shuffle.",
+3412,Malicious Affliction,{B}{B},2.0,['B'],Instant,"Morbid — When you cast this spell, if a creature died this turn, you may copy Malicious Affliction and may choose a new target for the copy.
+Destroy target nonblack creature.",
+3554,Lobelia Sackville-Baggins,{2}{B},3.0,['B'],Legendary Creature — Halfling Citizen,"Flash
+Menace
+When Lobelia enters, exile target creature card from an opponent's graveyard that was put there from the battlefield this turn, then create X Treasure tokens, where X is the exiled card's power.",
+4179,"King Macar, the Gold-Cursed",{2}{B}{B},4.0,['B'],Legendary Creature — Human Noble,"Inspired — Whenever King Macar becomes untapped, you may exile target creature. If you do, create a Gold token. (It's an artifact with ""Sacrifice this token: Add one mana of any color."")","['B', 'G', 'R', 'U', 'W']"
+5223,Dino DNA,{1},1.0,[],Artifact,"Imprint — {1}, {T}: Exile target creature card from a graveyard. Activate only as a sorcery.
+{6}: Create a token that's a copy of target creature card exiled with this artifact, except it's a 6/6 green Dinosaur creature with trample. Activate only as a sorcery.",
+5570,Entomb,{B},1.0,['B'],Instant,"Search your library for a card, put that card into your graveyard, then shuffle.",
+5689,Come Back Wrong,{2}{B},3.0,['B'],Sorcery,"Destroy target creature. If a creature card is put into a graveyard this way, return it to the battlefield under your control. Sacrifice it at the beginning of your next end step.",
+6388,Tarrian's Soulcleaver,{1},1.0,[],Legendary Artifact — Equipment,"Equipped creature has vigilance.
+Whenever another artifact or creature is put into a graveyard from the battlefield, put a +1/+1 counter on equipped creature.
+Equip {2}",
+6502,Mausoleum Secrets,{1}{B},2.0,['B'],Instant,"Undergrowth — Search your library for a black card with mana value less than or equal to the number of creature cards in your graveyard, reveal it, put it into your hand, then shuffle.",
+6524,Imp's Mischief,{1}{B},2.0,['B'],Instant,Change the target of target spell with a single target. You lose life equal to that spell's mana value.,
+7483,Not Dead After All,{B},1.0,['B'],Instant,"Until end of turn, target creature you control gains ""When this creature dies, return it to the battlefield tapped under its owner's control, then create a Wicked Role token attached to it."" (Enchanted creature gets +1/+1. When this token is put into a graveyard, each opponent loses 1 life.)",
+7569,Maze of Ith,,0.0,[],Land,{T}: Untap target attacking creature. Prevent all combat damage that would be dealt to and dealt by that creature this turn.,
+7852,Dauthi Trapper,{2}{B},3.0,['B'],Creature — Dauthi Minion,{T}: Target creature gains shadow until end of turn. (It can block or be blocked by only creatures with shadow.),
+8080,Treasure Vault,,0.0,[],Artifact Land,"{T}: Add {C}.
+{X}{X}, {T}, Sacrifice this land: Create X Treasure tokens.",['C']
+8134,Dream-Thief's Bandana,{2},2.0,[],Artifact — Equipment,"Whenever equipped creature deals combat damage to a player, look at the top card of their library, then exile it face down. For as long as it remains exiled, you may play it, and mana of any type can be spent to cast that spell.
+Equip {1}",
+8566,"Gollum, Scheming Guide",{1}{B},2.0,['B'],Legendary Creature — Halfling Horror,"Whenever Gollum attacks, look at the top two cards of your library, put them back in any order, then choose land or nonland. An opponent guesses whether the top card of your library is the chosen kind. Reveal that card. If they guessed right, remove Gollum from combat. Otherwise, you draw a card and Gollum can't be blocked this turn.",
+8791,Phyrexian Obliterator,{B}{B}{B}{B},4.0,['B'],Creature — Phyrexian Horror,"Trample
+Whenever a source deals damage to this creature, that source's controller sacrifices that many permanents of their choice.",
+9232,Kor Dirge,{2}{B},3.0,['B'],Instant,All damage that would be dealt this turn to target creature you control by a source of your choice is dealt to another target creature instead.,
+9413,Mastermind Plum,{2}{B},3.0,['B'],Legendary Creature — Human Wizard,"Whenever Mastermind Plum attacks, exile up to one target card from a graveyard. If an artifact card was exiled this way, create a Treasure token. (It's an artifact with ""{T}, Sacrifice this token: Add one mana of any color."")
+Whenever you cast a spell, if mana from a Treasure was spent to cast it, you draw a card and you lose 1 life.","['B', 'G', 'R', 'U', 'W']"
+9625,Quick-Draw Dagger,{3},3.0,[],Artifact — Equipment,"Flash
+When this Equipment enters, attach it to target creature you control. That creature gains first strike until end of turn.
+Equipped creature gets +1/+1.
+Equip {1} ({1}: Attach to target creature you control. Equip only as a sorcery.)",
+9826,Necromantic Thirst,{2}{B}{B},4.0,['B'],Enchantment — Aura,"Enchant creature
+Whenever enchanted creature deals combat damage to a player, you may return target creature card from your graveyard to your hand.",
+9920,Defile,{B},1.0,['B'],Instant,Target creature gets -1/-1 until end of turn for each Swamp you control.,
+10323,Flare of Malice,{2}{B}{B},4.0,['B'],Instant,"You may sacrifice a nontoken black creature rather than pay this spell's mana cost.
+Each opponent sacrifices a creature or planeswalker with the greatest mana value among creatures and planeswalkers they control.",
+11109,Planeswalker's Scorn,{2}{B},3.0,['B'],Enchantment,"{3}{B}: Target opponent reveals a card at random from their hand. Target creature gets -X/-X until end of turn, where X is the revealed card's mana value. Activate only as a sorcery.",
+11592,Swamp,,0.0,[],Basic Land — Swamp,({T}: Add {B}.),['B']
+12332,Dauthi Ghoul,{1}{B},2.0,['B'],Creature — Dauthi Zombie,"Shadow (This creature can block or be blocked by only creatures with shadow.)
+Whenever a creature with shadow dies, put a +1/+1 counter on this creature.",
+12721,"Mari, the Killing Quill",{1}{B}{B},3.0,['B'],Legendary Creature — Vampire Assassin,"Whenever a creature an opponent controls dies, exile it with a hit counter on it.
+Assassins, Mercenaries, and Rogues you control have deathtouch and ""Whenever this creature deals combat damage to a player, you may remove a hit counter from a card that player owns in exile. If you do, draw a card and create two Treasure tokens.""",
+12817,Dauthi Cutthroat,{1}{B},2.0,['B'],Creature — Dauthi Minion,"Shadow (This creature can block or be blocked by only creatures with shadow.)
+{1}{B}, {T}: Destroy target creature with shadow.",
+12983,Court of Locthwain,{2}{B}{B},4.0,['B'],Enchantment,"When this enchantment enters, you become the monarch.
+At the beginning of your upkeep, exile the top card of target opponent's library. You may play that card for as long as it remains exiled, and mana of any type can be spent to cast it. If you're the monarch, until end of turn, you may cast a spell from among cards exiled with this enchantment without paying its mana cost.",
+13668,Necrosynthesis,{1}{B},2.0,['B'],Enchantment — Aura,"Enchant creature
+Enchanted creature has ""Whenever another creature dies, put a +1/+1 counter on this creature.""
+When enchanted creature dies, look at the top X cards of your library, where X is its power. Put one of those cards into your hand and the rest on the bottom of your library in a random order.",
+13704,Unstoppable Slasher,{2}{B},3.0,['B'],Creature — Zombie Assassin,"Deathtouch
+Whenever this creature deals combat damage to a player, they lose half their life, rounded up.
+When this creature dies, if it had no counters on it, return it to the battlefield tapped under its owner's control with two stun counters on it.",
+13758,Nim Deathmantle,{2},2.0,[],Artifact — Equipment,"Equipped creature gets +2/+2, has intimidate, and is a black Zombie. (A creature with intimidate can't be blocked except by artifact creatures and/or creatures that share a color with it.)
+Whenever a nontoken creature is put into your graveyard from the battlefield, you may pay {4}. If you do, return that card to the battlefield and attach this Equipment to it.
+Equip {4}",
+14023,"Varragoth, Bloodsky Sire",{2}{B},3.0,['B'],Legendary Creature — Demon Rogue,"Deathtouch
+Boast — {1}{B}: Target player searches their library for a card, then shuffles and puts that card on top. (Activate only if this creature attacked this turn and only once each turn.)",
+14037,Abyssal Harvester,{1}{B}{B},3.0,['B'],Creature — Demon Warlock,"{T}: Exile target creature card from a graveyard that was put there this turn. Create a token that's a copy of it, except it's a Nightmare in addition to its other types. Then exile all other Nightmare tokens you control.",
+14210,Spymaster's Vault,,0.0,[],Land,"This land enters tapped unless you control a Swamp.
+{T}: Add {B}.
+{B}, {T}: Target creature you control connives X, where X is the number of creatures that died this turn. (Draw X cards, then discard X cards. Put a +1/+1 counter on that creature for each nonland card discarded this way.)",['B']
+14331,Sol Ring,{1},1.0,[],Artifact,{T}: Add {C}{C}.,['C']
+14541,Witch's Cottage,,0.0,[],Land — Swamp,"({T}: Add {B}.)
+This land enters tapped unless you control three or more other Swamps.
+When this land enters untapped, you may put target creature card from your graveyard on top of your library.",['B']
+14641,Praetor's Grasp,{1}{B}{B},3.0,['B'],Sorcery,Search target opponent's library for a card and exile it face down. Then that player shuffles. You may play that card for as long as it remains exiled.,
+14662,Withering Boon,{1}{B},2.0,['B'],Instant,"As an additional cost to cast this spell, pay 3 life.
+Counter target creature spell.",
+14671,Orochi Soul-Reaver,{5}{B},6.0,['B'],Creature — Snake Ninja Rogue,"Ninjutsu {3}{B} ({3}{B}, Return an unblocked attacker you control to hand: Put this card onto the battlefield from your hand tapped and attacking.)
+Whenever one or more creatures you control deal combat damage to a player, create a Treasure token and manifest the top card of that player's library. (Put it onto the battlefield face down as a 2/2 creature. Turn it face up any time for its mana cost if it's a creature card.)",
+14731,Scheming Symmetry,{B},1.0,['B'],Sorcery,"Choose two target players. Each of them searches their library for a card, then shuffles and puts that card on top.",
+14766,Rush of Vitality,{1}{B},2.0,['B'],Instant,"Target creature gets +1/+0 and gains lifelink and indestructible until end of turn. (Damage dealt by that creature also causes its controller to gain that much life, and it can't be destroyed by damage or effects that say ""destroy."")",
+14873,Nether Traitor,{B}{B},2.0,['B'],Creature — Spirit,"Haste
+Shadow (This creature can block or be blocked by only creatures with shadow.)
+Whenever another creature is put into your graveyard from the battlefield, you may pay {B}. If you do, return this card from your graveyard to the battlefield.",
+14895,Grave Pact,{1}{B}{B}{B},4.0,['B'],Enchantment,"Whenever a creature you control dies, each other player sacrifices a creature of their choice.",
+15328,Marionette Apprentice,{1}{B},2.0,['B'],Creature — Human Artificer,"Fabricate 1 (When this creature enters, put a +1/+1 counter on it or create a 1/1 colorless Servo artifact creature token.)
+Whenever another creature or artifact you control is put into a graveyard from the battlefield, each opponent loses 1 life.",
+15454,Cabal Coffers,,0.0,[],Land,"{2}, {T}: Add {B} for each Swamp you control.",['B']
+15803,Blood Money,{5}{B}{B},7.0,['B'],Sorcery,"Destroy all creatures. For each nontoken creature destroyed this way, you create a tapped Treasure token.",
+16607,"Tinybones, the Pickpocket",{B},1.0,['B'],Legendary Creature — Skeleton Rogue,"Deathtouch
+Whenever Tinybones deals combat damage to a player, you may cast target nonland permanent card from that player's graveyard, and mana of any type can be spent to cast that spell.",
+16857,Ancient Brass Dragon,{5}{B}{B},7.0,['B'],Creature — Elder Dragon,"Flying
+Whenever this creature deals combat damage to a player, roll a d20. When you do, put any number of target creature cards with total mana value X or less from graveyards onto the battlefield under your control, where X is the result.",
+17012,Command Beacon,,0.0,[],Land,"{T}: Add {C}.
+{T}, Sacrifice this land: Put your commander into your hand from the command zone.",['C']
+17412,Wishclaw Talisman,{1}{B},2.0,['B'],Artifact,"This artifact enters with three wish counters on it.
+{1}, {T}, Remove a wish counter from this artifact: Search your library for a card, put it into your hand, then shuffle. An opponent gains control of this artifact. Activate only during your turn.",
+17796,"Nykthos, Shrine to Nyx",,0.0,[],Legendary Land,"{T}: Add {C}.
+{2}, {T}: Choose a color. Add an amount of mana of that color equal to your devotion to that color. (Your devotion to a color is the number of mana symbols of that color in the mana costs of permanents you control.)","['B', 'C', 'G', 'R', 'U', 'W']"
+18454,Grim Hireling,{3}{B},4.0,['B'],Creature — Tiefling Rogue,"Whenever one or more creatures you control deal combat damage to a player, create two Treasure tokens.
+{B}, Sacrifice X Treasures: Target creature gets -X/-X until end of turn. Activate only as a sorcery.",
+18547,Onyx Mage,{1}{B},2.0,['B'],Creature — Human Wizard,{1}{B}: Target creature you control gains deathtouch until end of turn. (Any amount of damage it deals to a creature is enough to destroy it.),
+18659,Undying Malice,{B},1.0,['B'],Instant,"Until end of turn, target creature gains ""When this creature dies, return it to the battlefield tapped under its owner's control with a +1/+1 counter on it.""",
+18684,Shadowspear,{1},1.0,[],Legendary Artifact — Equipment,"Equipped creature gets +1/+1 and has trample and lifelink.
+{1}: Permanents your opponents control lose hexproof and indestructible until end of turn.
+Equip {2}",
+18780,Mortuary,{3}{B},4.0,['B'],Enchantment,"Whenever a creature is put into your graveyard from the battlefield, put that card on top of your library.",
+18835,Talon Gates of Madara,,0.0,[],Land — Gate,"When this land enters, up to one target creature phases out.
+{T}: Add {C}.
+{1}, {T}: Add one mana of any color.
+{4}: Put this card from your hand onto the battlefield.","['B', 'C', 'G', 'R', 'U', 'W']"
+19279,Exquisite Blood,{4}{B},5.0,['B'],Enchantment,"Whenever an opponent loses life, you gain that much life.",
+19693,"Gix, Yawgmoth Praetor",{1}{B}{B},3.0,['B'],Legendary Creature — Phyrexian Praetor,"Whenever a creature deals combat damage to one of your opponents, its controller may pay 1 life. If they do, they draw a card.
+{4}{B}{B}{B}, Discard X cards: Exile the top X cards of target opponent's library. You may play lands and cast spells from among cards exiled this way without paying their mana costs.",
+19830,Demolition Field,,0.0,[],Land,"{T}: Add {C}.
+{2}, {T}, Sacrifice this land: Destroy target nonbasic land an opponent controls. That land's controller may search their library for a basic land card, put it onto the battlefield, then shuffle. You may search your library for a basic land card, put it onto the battlefield, then shuffle.",['C']
+20023,Death Denied,{X}{B}{B},2.0,['B'],Instant — Arcane,Return X target creature cards from your graveyard to your hand.,
+20797,Vashta Nerada,{2}{B},3.0,['B'],Creature — Alien Horror,"Indestructible
+Shadow (This creature can block or be blocked by only creatures with shadow.)
+Morbid — At the beginning of each end step, if a creature died this turn, put a +1/+1 counter on this creature.",
+20885,Horn of the Mark,{2},2.0,[],Legendary Artifact,"Whenever two or more creatures you control attack a player, look at the top five cards of your library. You may reveal a creature card from among them and put it into your hand. Put the rest on the bottom of your library in a random order.",
+21353,Consuming Ashes,{2}{B}{B},4.0,['B'],Instant,"Exile target creature. If it had mana value 3 or less, surveil 2. (Look at the top two cards of your library, then put any number of them into your graveyard and the rest on top of your library in any order.)",
+21649,"Armix, Filigree Thrasher",{2}{B},3.0,['B'],Legendary Artifact Creature — Golem,"Whenever Armix attacks, you may discard a card. When you do, target creature defending player controls gets -X/-X until end of turn, where X is the number of artifacts you control plus the number of artifact cards in your graveyard.
+Partner (You can have two commanders if both have partner.)",
+21993,Crypt Ghast,{3}{B},4.0,['B'],Creature — Spirit,"Extort (Whenever you cast a spell, you may pay {W/B}. If you do, each opponent loses 1 life and you gain that much life.)
+Whenever you tap a Swamp for mana, add an additional {B}.",['B']
+22286,Changeling Outcast,{B},1.0,['B'],Creature — Shapeshifter,"Changeling (This card is every creature type.)
+This creature can't block and can't be blocked.",
+23226,Insatiable Avarice,{B},1.0,['B'],Sorcery,"Spree (Choose one or more additional costs.)
++ {2} — Search your library for a card, then shuffle and put that card on top.
++ {B}{B} — Target player draws three cards and loses 3 life.",
+23319,Baleful Mastery,{3}{B},4.0,['B'],Instant,"You may pay {1}{B} rather than pay this spell's mana cost.
+If the {1}{B} cost was paid, an opponent draws a card.
+Exile target creature or planeswalker.",
+23487,Archfiend of Depravity,{3}{B}{B},5.0,['B'],Creature — Demon,"Flying
+At the beginning of each opponent's end step, that player chooses up to two creatures they control, then sacrifices the rest.",
+23629,Thespian's Stage,,0.0,[],Land,"{T}: Add {C}.
+{2}, {T}: This land becomes a copy of target land, except it has this ability.",['C']
+23817,Dauthi Embrace,{2}{B},3.0,['B'],Enchantment,{B}{B}: Target creature gains shadow until end of turn. (It can block or be blocked by only creatures with shadow.),
+24422,Muraganda Raceway,,0.0,[],Land,"Start your engines! (If you have no speed, it starts at 1. It increases once on each of your turns when an opponent loses life. Max speed is 4.)
+{T}: Add {C}.
+Max speed — {T}: Add {C}{C}.",['C']
+24624,Stromgald Spy,{3}{B},4.0,['B'],Creature — Human Rogue,"Whenever this creature attacks and isn't blocked, you may have defending player play with their hand revealed for as long as this creature remains on the battlefield. If you do, this creature assigns no combat damage this turn.",
+25530,Offer Immortality,{1}{B},2.0,['B'],Instant,"Target creature gains deathtouch and indestructible until end of turn. (Damage and effects that say ""destroy"" don't destroy it.)",
+25685,Dreamstealer,{2}{B},3.0,['B'],Creature — Human Wizard,"Menace
+Whenever this creature deals combat damage to a player, that player discards that many cards.
+Eternalize {4}{B}{B} ({4}{B}{B}, Exile this card from your graveyard: Create a token that's a copy of it, except it's a 4/4 black Zombie Human Wizard with no mana cost. Eternalize only as a sorcery.)",
+25958,Goldvein Pick,{2},2.0,[],Artifact — Equipment,"Equipped creature gets +1/+1.
+Whenever equipped creature deals combat damage to a player, create a Treasure token. (It's an artifact with ""{T}, Sacrifice this token: Add one mana of any color."")
+Equip {1} ({1}: Attach to target creature you control. Equip only as a sorcery.)","['B', 'G', 'R', 'U', 'W']"
+26002,Ashnod's Intervention,{B},1.0,['B'],Instant,"Until end of turn, target creature gets +2/+0 and gains ""When this creature dies or is put into exile from the battlefield, return it to its owner's hand.""",
+26419,Terror of Towashi,{2}{B}{B},4.0,['B'],Creature — Phyrexian Ogre,"Deathtouch
+Whenever this creature attacks, you may pay {3}{B}. When you do, return target creature card from your graveyard to the battlefield. It's a Phyrexian in addition to its other types.",
+27179,Whispersteel Dagger,{2}{B},3.0,['B'],Artifact — Equipment,"Equipped creature gets +2/+0.
+Whenever equipped creature deals combat damage to a player, you may cast a creature spell from that player's graveyard this turn, and you may spend mana as though it were mana of any color to cast that spell.
+Equip {3}",
+27384,Beseech the Mirror,{1}{B}{B}{B},4.0,['B'],Sorcery,"Bargain (You may sacrifice an artifact, enchantment, or token as you cast this spell.)
+Search your library for a card, exile it face down, then shuffle. If this spell was bargained, you may cast the exiled card without paying its mana cost if that spell's mana value is 4 or less. Put the exiled card into your hand if it wasn't cast this way.",
+27785,Ring of Xathrid,{2},2.0,[],Artifact — Equipment,"{2}: Regenerate equipped creature. (The next time that creature would be destroyed this turn, instead tap it, remove it from combat, and heal all damage on it.)
+At the beginning of your upkeep, put a +1/+1 counter on equipped creature if it's black.
+Equip {1} ({1}: Attach to target creature you control. Equip only as a sorcery.)",
+28032,Sword of Feast and Famine,{3},3.0,[],Artifact — Equipment,"Equipped creature gets +2/+2 and has protection from black and from green.
+Whenever equipped creature deals combat damage to a player, that player discards a card and you untap all lands you control.
+Equip {2}",
+28153,Brotherhood Regalia,{2},2.0,[],Artifact — Equipment,"Equipped creature has ward {2}, is an Assassin in addition to its other types, and can't be blocked.
+Equip legendary creature {1}
+Equip {3} ({3}: Attach to target creature you control. Equip only as a sorcery.)",
+28259,"Geth, Lord of the Vault",{4}{B}{B},6.0,['B'],Legendary Creature — Phyrexian Zombie,"Intimidate (This creature can't be blocked except by artifact creatures and/or creatures that share a color with it.)
+{X}{B}: Put target artifact or creature card with mana value X from an opponent's graveyard onto the battlefield under your control tapped. Then that player mills X cards.",
+29746,Sudden Spoiling,{1}{B}{B},3.0,['B'],Instant,"Split second (As long as this spell is on the stack, players can't cast spells or activate abilities that aren't mana abilities.)
+Until end of turn, creatures target player controls lose all abilities and have base power and toughness 0/2.",
+30025,Dowsing Dagger // Lost Vale,,2.0,,Artifact — Equipment // Land,,"['B', 'G', 'R', 'U', 'W']"
+30330,"Gonti, Night Minister",{2}{B}{B},4.0,['B'],Legendary Creature — Aetherborn Rogue,"Whenever a player casts a spell they don't own, that player creates a Treasure token.
+Whenever a creature deals combat damage to one of your opponents, its controller looks at the top card of that opponent's library and exiles it face down. They may play that card for as long as it remains exiled. Mana of any type can be spent to cast a spell this way.",
+30730,Extraplanar Lens,{3},3.0,[],Artifact,"Imprint — When this artifact enters, you may exile target land you control.
+Whenever a land with the same name as the exiled card is tapped for mana, its controller adds one mana of any type that land produced.","['B', 'G', 'R', 'U', 'W']"
+30781,Lantern of Insight,{1},1.0,[],Artifact,"Players play with the top card of their libraries revealed.
+{T}, Sacrifice this artifact: Target player shuffles.",
+30925,Dead Man's Chest,{1}{B},2.0,['B'],Enchantment — Aura,"Enchant creature an opponent controls
+When enchanted creature dies, exile cards equal to its power from the top of its owner's library. You may cast spells from among those cards for as long as they remain exiled, and mana of any type can be spent to cast them.",
+31195,Cunning Rhetoric,{2}{B},3.0,['B'],Enchantment,"Whenever an opponent attacks you and/or one or more planeswalkers you control, exile the top card of that player's library. You may play that card for as long as it remains exiled, and you may spend mana as though it were mana of any color to cast it.",
+31303,"Ashling, the Extinguisher",{2}{B}{B},4.0,['B'],Legendary Creature — Elemental Shaman,"Whenever Ashling deals combat damage to a player, choose target creature that player controls. The player sacrifices that creature.",
+31364,Adaptive Omnitool,{2},2.0,[],Artifact — Equipment,"Equipped creature gets +1/+1 for each artifact you control.
+Whenever equipped creature attacks, look at the top six cards of your library. You may reveal an artifact card from among them and put it into your hand. Put the rest on the bottom of your library in a random order.
+Equip {3}",
+31440,Haunted Crossroads,{2}{B},3.0,['B'],Enchantment,{B}: Put target creature card from your graveyard on top of your library.,
+31737,Breach the Multiverse,{5}{B}{B},7.0,['B'],Sorcery,"Each player mills ten cards. For each player, choose a creature or planeswalker card in that player's graveyard. Put those cards onto the battlefield under your control. Then each creature you control becomes a Phyrexian in addition to its other types.",
+32006,Access Tunnel,,0.0,[],Land,"{T}: Add {C}.
+{3}, {T}: Target creature with power 3 or less can't be blocked this turn.",['C']
+32054,Vampiric Tutor,{B},1.0,['B'],Instant,"Search your library for a card, then shuffle and put that card on top. You lose 2 life.",
+32099,Tormented Soul,{B},1.0,['B'],Creature — Spirit,This creature can't block and can't be blocked.,
+32284,Codex Shredder,{1},1.0,[],Artifact,"{T}: Target player mills a card. (They put the top card of their library into their graveyard.)
+{5}, {T}, Sacrifice this artifact: Return target card from your graveyard to your hand.",
+32360,Trepanation Blade,{3},3.0,[],Artifact — Equipment,"Whenever equipped creature attacks, defending player reveals cards from the top of their library until they reveal a land card. The creature gets +1/+0 until end of turn for each card revealed this way. That player puts the revealed cards into their graveyard.
+Equip {2}",
+32507,"Gisa, Glorious Resurrector",{2}{B}{B},4.0,['B'],Legendary Creature — Human Wizard,"If a creature an opponent controls would die, exile it instead.
+At the beginning of your upkeep, put all creature cards exiled with Gisa onto the battlefield under your control. They gain decayed. (A creature with decayed can't block. When it attacks, sacrifice it at end of combat.)",
+32586,Dauthi Voidwalker,{B}{B},2.0,['B'],Creature — Dauthi Rogue,"Shadow (This creature can block or be blocked by only creatures with shadow.)
+If a card would be put into an opponent's graveyard from anywhere, instead exile it with a void counter on it.
+{T}, Sacrifice this creature: Choose an exiled card an opponent owns with a void counter on it. You may play it this turn without paying its mana cost.",
+32752,Helm of Awakening,{2},2.0,[],Artifact,Spells cost {1} less to cast.,
+33290,Feign Death,{B},1.0,['B'],Instant,"Until end of turn, target creature gains ""When this creature dies, return it to the battlefield tapped under its owner's control with a +1/+1 counter on it.""",
+34116,"Tinybones, Bauble Burglar",{1}{B},2.0,['B'],Legendary Creature — Skeleton Rogue,"Whenever an opponent discards a card, exile it from their graveyard with a stash counter on it.
+During your turn, you may play cards you don't own with stash counters on them from exile, and mana of any type can be spent to cast those spells.
+{3}{B}, {T}: Each opponent discards a card. Activate only as a sorcery.",
