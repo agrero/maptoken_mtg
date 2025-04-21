@@ -1,0 +1,123 @@
+1 Abyssal Harvester [Theft] ^Thematic,#c00407^
+1 Access Tunnel [Land] ^Thematic,#c00407^
+1 Adaptive Omnitool [Draw,DPS Up] ^Getting,#2ccce4^
+1 Ancient Brass Dragon [Finisher,Force Block] ^Getting,#2ccce4^
+1 Arcane Signet [Ramp] ^Getting,#2ccce4^
+1 Archfiend of Depravity [Finisher] ^Getting,#2ccce4^
+1 Armix, Filigree Thrasher [Removal,Attacker] ^Getting,#2ccce4^
+1 Ashling, the Extinguisher [Removal,Attacker,Force Block] ^Getting,#2ccce4^
+1 Ashnod's Intervention [Protection] ^Getting,#2ccce4^
+1 Baleful Mastery [Removal] ^Getting,#2ccce4^
+1 Beseech the Mirror [Tutor] ^Getting,#2ccce4^
+1 Black Market [Ramp] ^Thematic,#c00407^
+1 Blood Money [Finisher,Removal] ^Getting,#2ccce4^
+1 Bojuka Bog [Land] ^Thematic,#c00407^
+1 Bone Dancer [Theft] ^Thematic,#c00407^
+1 Breach the Multiverse [Theft] ^Thematic,#c00407^
+1 Brotherhood Regalia [Evasion,DPS Up] ^Thematic,#c00407^
+1 Cabal Coffers [Land] ^Thematic,#c00407^
+1 Cabal Stronghold [Land] ^Thematic,#c00407^
+1 Changeling Outcast [Evasion,Attacker] ^Thematic,#c00407^
+1 Codex Shredder [Political] ^Thematic,#c00407^
+1 Come Back Wrong [Removal] ^Thematic,#c00407^
+1 Command Beacon [Land] ^Thematic,#c00407^
+1 Consuming Ashes [Removal] ^Getting,#2ccce4^
+1 Court of Locthwain [Theft] ^Thematic,#c00407^
+1 Crypt Ghast [Ramp] ^Getting,#2ccce4^
+1 Cunning Rhetoric [Protection] ^Thematic,#c00407^
+1 Dauthi Cutthroat [Evasion,Attacker] ^Thematic,#c00407^
+1 Dauthi Embrace [Evasion,DPS Up] ^Thematic,#c00407^
+1 Dauthi Ghoul [Evasion,Attacker] ^Getting,#2ccce4^
+1 Dauthi Trapper [Evasion,Attacker] ^Thematic,#c00407^
+1 Dauthi Voidwalker [Evasion,Attacker] ^Thematic,#c00407^
+1 Dead Man's Chest [Theft] ^Thematic,#c00407^
+1 Deadly Rollick [Removal] ^Getting,#2ccce4^
+1 Death Denied [Recursion] ^Getting,#2ccce4^
+1 Defile [Removal] ^Getting,#2ccce4^
+1 Demolition Field [Land] ^Thematic,#c00407^
+1 Demonic Tutor [Tutor] ^Thematic,#c00407^
+1 Diabolic Intent [Tutor] ^Getting,#2ccce4^
+1 Diabolic Tutor [Tutor] ^Getting,#2ccce4^
+1 Dowsing Dagger // Lost Vale [Ramp,DPS Up] ^Getting,#2ccce4^
+1 Dream-Thief's Bandana [Theft,DPS Up] ^Thematic,#c00407^
+1 Dreamstealer [Force Block,Attacker,Recursion] ^Getting,#2ccce4^
+1 Entomb [Tutor] ^Getting,#2ccce4^
+1 Exquisite Blood [Finisher] ^Getting,#2ccce4^
+1 Extraplanar Lens [Ramp] ^Imported,#f0bf2f^
+1 Feign Death [Protection] ^Thematic,#c00407^
+1 Flare of Malice [Removal] ^Getting,#2ccce4^
+1 Force of Despair [Removal] ^Getting,#2ccce4^
+1 Geth, Lord of the Vault [Theft] ^Thematic,#c00407^
+1 Gisa, Glorious Resurrector [Theft] ^Thematic,#c00407^
+1 Gix, Yawgmoth Praetor [Theft] ^Thematic,#c00407^
+1 Glasses of Urza [Political] ^Thematic,#c00407^
+1 Goldvein Pick [Treasure,DPS Up] ^Getting,#2ccce4^
+1 Gollum, Scheming Guide [Evasion,Attacker,Political] ^Thematic,#c00407^
+1 Gonti, Night Minister [Commander{top}] ^Thematic,#c00407^
+1 Grave Pact [Removal] ^Getting,#2ccce4^
+1 Grim Hireling [Treasure] ^Thematic,#c00407^
+1 Haunted Crossroads [Recursion] ^Getting,#2ccce4^
+1 Helm of Awakening [Ramp] ^Getting,#2ccce4^
+1 Horn of the Mark [Draw] ^Getting,#2ccce4^
+1 Imp's Mischief [Protection] ^Getting,#2ccce4^
+1 Insatiable Avarice [Tutor] ^Getting,#2ccce4^
+1 King Macar, the Gold-Cursed [Removal,Attacker,Force Block] ^Getting,#2ccce4^
+1 Kor Dirge [Protection] ^Getting,#2ccce4^
+1 Lantern of Insight [Political] ^Thematic,#c00407^
+1 Lobelia Sackville-Baggins [Treasure] ^Getting,#2ccce4^
+1 Malicious Affliction [Removal] ^Getting,#2ccce4^
+1 Mari, the Killing Quill [Treasure,Attacker] ^Thematic,#c00407^
+1 Marionette Apprentice [Finisher] ^Getting,#2ccce4^
+1 Mastermind Plum [Draw] ^Getting,#2ccce4^
+1 Mausoleum Secrets [Tutor] ^Getting,#2ccce4^
+1 Maze of Ith [Land] ^Thematic,#c00407^
+1 Misinformation [Political] ^Thematic,#c00407^
+1 Mortuary [Recursion] ^Thematic,#c00407^
+1 Muraganda Raceway [Land] ^Thematic,#c00407^
+1 Necromantic Thirst [Recursion,Force Block] ^Getting,#2ccce4^
+1 Necrosynthesis [Draw,DPS Up] ^Getting,#2ccce4^
+1 Nether Traitor [Evasion,Attacker] ^Thematic,#c00407^
+1 Nim Deathmantle [Recursion,DPS Up] ^Thematic,#c00407^
+1 Not Dead After All [Protection] ^Getting,#2ccce4^
+1 Nykthos, Shrine to Nyx [Land] ^Thematic,#c00407^
+1 Offer Immortality [Protection] ^Getting,#2ccce4^
+1 Onyx Mage [Evasion] ^Getting,#2ccce4^
+1 Opposition Agent [Theft] ^Thematic,#c00407^
+1 Orochi Soul-Reaver [Treasure,Force Block] ^Thematic,#c00407^
+1 Phyrexian Obliterator [Removal,Attacker,Force Block] ^Getting,#2ccce4^
+1 Planeswalker's Scorn [Removal] ^Thematic,#c00407^
+1 Praetor's Grasp [Political] ^Thematic,#c00407^
+1 Psychic Paper [Evasion,DPS Up] ^Thematic,#c00407^
+1 Quick-Draw Dagger [Protection,DPS Up] ^Thematic,#c00407^
+1 Ring of Xathrid [Recursion,DPS Up] ^Getting,#2ccce4^
+1 Rush of Vitality [Protection] ^Getting,#2ccce4^
+1 Scheming Symmetry [Political] ^Getting,#2ccce4^
+1 Shadowspear [Removal,DPS Up] ^Getting,#2ccce4^
+1 Shizo, Death's Storehouse [Land] ^Thematic,#c00407^
+1 Sol Ring [Ramp] ^Getting,#2ccce4^
+1 Spymaster's Vault [Land] ^Thematic,#c00407^
+1 Stromgald Spy [Political,Attacker] ^Thematic,#c00407^
+1 Sudden Spoiling [Removal] ^Getting,#2ccce4^
+21 Swamp [Land] ^Thematic,#c00407^
+1 Sword of Feast and Famine [Ramp,DPS Up] ^Getting,#2ccce4^
+1 Talon Gates of Madara [Land] ^Thematic,#c00407^
+1 Tarrian's Soulcleaver [Finisher,DPS Up] ^Getting,#2ccce4^
+1 Terror of Towashi [Recursion,Attacker] ^Getting,#2ccce4^
+1 Thespian's Stage [Land] ^Thematic,#c00407^
+1 Thieving Varmint [Ramp] ^Thematic,#c00407^
+1 Tinybones, Bauble Burglar [Theft] ^Thematic,#c00407^
+1 Tinybones, the Pickpocket [Theft,Attacker,Force Block] ^Thematic,#c00407^
+1 Tormented Soul [Evasion,Attacker] ^Getting,#2ccce4^
+1 Treasure Vault [Land] ^Thematic,#c00407^
+1 Trepanation Blade [Political,DPS Up] ^Thematic,#c00407^
+1 Undying Malice [Protection] ^Getting,#2ccce4^
+1 Unstoppable Slasher [Finisher,Force Block,Attacker] ^Getting,#2ccce4^
+1 Vampiric Tutor [Tutor] ^Getting,#2ccce4^
+1 Varragoth, Bloodsky Sire [Tutor,Attacker] ^Getting,#2ccce4^
+1 Vashta Nerada [Evasion,Attacker] ^Thematic,#c00407^
+1 Vat of Rebirth [Recursion] ^Getting,#2ccce4^
+1 Whispersteel Dagger [Theft] ^Thematic,#c00407^
+1 Wishclaw Talisman [Political] ^Getting,#2ccce4^
+1 Witch's Cottage [Land] ^Thematic,#c00407^
+1 Withering Boon [Protection] ^Getting,#2ccce4^
+1 Wreck Hunter [Ramp] ^Getting,#2ccce4^
