@@ -3,3 +3,6 @@ scraping/
 *.db
 *-journal
 __pycache__/
+
+*.csv
+*.txt

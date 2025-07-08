@@ -69,12 +69,14 @@ class Scraper:
         return cards if len(cards) >= 1 else ['']
 
 
-scraper = Scraper(db_url='http://127.0.0.1:8000')
+if __name__ == '__main__':
+
+    scraper = Scraper(db_url='http://127.0.0.1:8000')
 
 
-batch_size = 1000
-start = scraper.get_start()
-print(start)
-stop = start + batch_size
+    batch_size = 1000
+    start = scraper.get_start()
+    print(start)
+    stop = start + batch_size
 
-scraper.scrape(start, stop)
+    scraper.scrape(start, stop)
