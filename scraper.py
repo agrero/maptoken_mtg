@@ -73,7 +73,7 @@ class Scraper:
 
 if __name__ == '__main__':
 
-    scraper = Scraper(db_url='http://0.0.0.1:8000')
+    scraper = Scraper(db_url='http://0.0.0.0:8000')
 
 
     batch_size = 100000
