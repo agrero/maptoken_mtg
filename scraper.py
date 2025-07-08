@@ -18,7 +18,9 @@ class Scraper:
         for archidekt_id in tqdm(range(start, stop)):
             try:
                 deck = getDeckById(archidekt_id)
+                print(deck)
             except:
+
                 continue
 
             if self._is_commander(deck):
@@ -71,12 +73,12 @@ class Scraper:
 
 if __name__ == '__main__':
 
-    scraper = Scraper(db_url='http://127.0.0.1:8000')
+    scraper = Scraper(db_url='http://0.0.0.1:8000')
 
 
-    batch_size = 1000
+    batch_size = 100000
     start = scraper.get_start()
     print(start)
-    stop = start + batch_size
+    stop = start + batch_size + 1000
 
     scraper.scrape(start, stop)
