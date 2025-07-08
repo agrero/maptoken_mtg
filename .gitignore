@@ -1,1 +1,5 @@
 *.json
+scraping/
+*.db
+*-journal
+__pycache__/

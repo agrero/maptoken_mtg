@@ -1,66 +1,80 @@
-
-
 from pyrchidekt.api import getDeckById
 from pyrchidekt.deck import Deck
 
-import pandas as pd
+from src.db_models import *
+
+from src.RequestHandler import RequestHandler
+
+from tqdm import tqdm
 
 
-# will need a way to screen good links from bad
-# also need a way to save
-
-deck = getDeckById(40)
-
-def scrape_categories(deck:Deck):
+class Scraper:
     
-    categories = [[i.card.oracle_card.id for i in deck.categories[j].cards]
-                  for j in range(len(deck.categories))]
+    def __init__(self, db_url:str):
+        self.reqhand = RequestHandler(db_url)
+
+    def scrape(self, start:int, stop:int):
+
+        for archidekt_id in tqdm(range(start, stop)):
+            try:
+                deck = getDeckById(archidekt_id)
+            except:
+                continue
+
+            if self._is_commander(deck):
+                # post commander and cardlist
+
+                # # commander
+                self.add_commander(deck, archidekt_id)
+                
+                self.add_cards(deck, archidekt_id)
+
+    def get_start(self) -> int:
+        req = self.reqhand.get_request('/cards/latest/')
+        return req.json()['decklist_id']
+                    
+
+    def add_cards(self, deck:Deck, archidekt_id:int) :
+        for arch_card in deck.cards:
+            reqs = self.reqhand.post_request(
+                CardCreate(
+                    decklist_id = archidekt_id,
+                    count = arch_card.quantity,
+                    name = arch_card.card.oracle_card.name
+                ).model_dump(), 
+                post_url = self.reqhand.url + '/cards/'
+            )
+
+    def add_commander(self, deck:Deck, archidekt_id:int):
+        # # commander
+        self.reqhand.post_request(
+            # this will not work for partners
+            CommanderCreate(
+                name = self._get_commander(deck)[0], 
+                decklist_id = archidekt_id
+            ).model_dump(), 
+            post_url = self.reqhand.url + '/commanders/'
+        )
+
+    def _is_commander(self, deck:Deck):
+        return deck.format == 3
     
-    category_names = [i.name for i in deck.categories]
-    categories = {
-        category_names[ndx]:category 
-        for ndx, category in enumerate(categories)
-    }
-
-    return categories
-
-# for iterating
-
-# precompile a list of all of the names and initialize the categories
-# with empty dictionaries to lists
-
-# iterate through categories and extend lists 
-
-
-cats = scrape_categories(deck)
-print(cats)
-
-# print(deck.categories[1].name)
-# print([[i.card.oracle_card.id for i in deck.categories[j].cards]
-#        for j in range(len(deck.categories))])
-
-
-
-# for category in deck.categories:
-#     print(f'{category.name}')
-#     for card in category.cards:
-#         print(f'\t{card.quantity} {card.card.oracle_card.name}')
+    def _get_commander(self, deck:Deck):
+        cards = [i.cards for i in deck.categories 
+                if i.name == 'Commander']
         
-#     print('')
-
-no_decks = 10
-deck_ids = [i for i in range(10)]
-
-# to extract name
-
-# deck.cards.id
-
-# bingo
-# print(deck.cards[0].card.id)
-
-# categories
-
-# 
+        cards = [i[0].card.oracle_card.name for i in cards]
+        
+        
+        return cards if len(cards) >= 1 else ['']
 
 
+scraper = Scraper(db_url='http://127.0.0.1:8000')
 
+
+batch_size = 1000
+start = scraper.get_start()
+print(start)
+stop = start + batch_size
+
+scraper.scrape(start, stop)
