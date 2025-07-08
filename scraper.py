@@ -50,7 +50,7 @@ class Scraper:
     def add_commander(self, deck:Deck, archidekt_id:int):
         # # commander
 
-        commander_name = self._get_commanderv2(deck)
+        commander_name = self._get_commander(deck)
         print(commander_name)
         self.reqhand.post_request(
             # this will not work for partners
@@ -64,24 +64,14 @@ class Scraper:
     def _is_commander(self, deck:Deck):
         return deck.format == 3
     
-    def _get_commanderv2(self, deck:Deck):
+    def _get_commander(self, deck:Deck):
         cards = [i.cards for i in deck.categories 
         if i.name == 'Commander']
-        
         try:
             cards = [i[0].card.oracle_card.name for i in cards]
             return '+'.join(cards)
         except:
             return ''
-
-    def _get_commander(self, deck:Deck):
-        cards = [i.cards for i in deck.categories 
-                if i.name == 'Commander']
-        
-        cards = [i[0].card.oracle_card.name if len(cards) >= 1 else [''] for i in cards]
-        
-        
-        return cards if len(cards) >= 1 else ['']
 
 
 if __name__ == '__main__':
