@@ -1,5 +1,8 @@
 from sqlmodel import Field, SQLModel
 
+# kinda makes it hard to find what this is obfuscating
+from .helper import *
+
 # COMMANDERS
 
 class CommanderBase(SQLModel):
@@ -15,11 +18,9 @@ class CommanderPublic(CommanderBase):
 class CommanderCreate(CommanderBase):
     pass
 
-
 # CARDS
 
 class CardBase(SQLModel):
-    
     decklist_id : int | None = Field(default=None, index=True)
     count: int | None = Field(default=0, index=False)
     name: str = Field(index=False)
@@ -27,10 +28,8 @@ class CardBase(SQLModel):
 class Card(CardBase, table=True):
     id: int | None = Field(default=None, primary_key=True)
 
-
 class CardPublic(CardBase):
     id: int
-
 
 class CardCreate(CardBase):
     pass
@@ -38,3 +37,12 @@ class CardCreate(CardBase):
 class CardUpdate(CardBase):
     name: str | None = None
     age: int | None = None
+
+# TRAINING DATA # this is kinda bad ngl
+
+# class TrainingBase(create_TrainingData()):
+#     """Base Training Data Class as constured in the <b>helper</b> module"""
+#     pass
+
+# class TrainingData(TrainingBase, table=True):
+#     id: int = Field(default=None, primary_key=True)

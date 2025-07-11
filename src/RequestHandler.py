@@ -27,3 +27,10 @@ class RequestHandler:
         
         return req
     
+    def delete_request(self, delete_url:str):
+
+        req = requests.delete(
+            url = self.url + delete_url
+        )
+
+        return req
