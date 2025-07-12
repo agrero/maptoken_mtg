@@ -1,62 +1,24 @@
 from pyrchidekt.api import getDeckById
 from pyrchidekt.deck import Deck
 
-from src.db_models import *
-
-from src.RequestHandler import RequestHandler
-
-from src import helper
+from .db_models import *
+from .RequestHandler import RequestHandler
+from . import helper
 
 from tqdm import tqdm
-
 import os
-
 import pandas as pd
 
+class _Scraper:
+    """
+    Parent class of Scraper, intended for sub components for the 
+    larger scripts in Scraper.
+    """
 
-class Scraper:
-    
     def __init__(self, db_url:str):
-        self.reqhand = RequestHandler(db_url)
-
-    def scrape(self, start:int, stop:int):
-        for archidekt_id in tqdm(range(start, stop)):
-            try:
-                deck = getDeckById(archidekt_id)
-            except:
-                continue
-            if self._is_commander(deck):
-                self.add_commander(deck, archidekt_id)
-                self.add_cards(deck, archidekt_id)
-
-    def get_start(self) -> int:
-        req = self.reqhand.get_request('/cards/latest/')
-        return req.json()['decklist_id']             
-
-    def add_cards(self, deck:Deck, archidekt_id:int) :
-        for arch_card in deck.cards:
-            self.reqhand.post_request(
-                CardCreate(
-                    decklist_id = archidekt_id,
-                    count = arch_card.quantity,
-                    name = arch_card.card.oracle_card.name
-                ).model_dump(), 
-                post_url = self.reqhand.url + '/cards/'
-            )
-
-    def add_commander(self, deck:Deck, archidekt_id:int):
-        # # commander
-
-        commander_name = self._get_commander(deck)
         
-        self.reqhand.post_request(
-            # this will not work for partners
-            CommanderCreate(
-                name = commander_name, 
-                decklist_id = archidekt_id
-            ).model_dump(), 
-            post_url = self.reqhand.url + '/commanders/'
-        )
+        # i think this should just be inherited
+        self.reqhand = RequestHandler(db_url)
 
     def _query_cards(self, get_url:str='/cards/'):
         req = self.reqhand.get_request(get_url)
@@ -73,14 +35,53 @@ class Scraper:
             return '+'.join(cards)
         except:
             return ''
+        
+    def _get_start(self) -> int:
+        req = self.reqhand.get_request('/cards/latest/')
+        return req.json()['decklist_id']             
 
-    def _make_umap_zeroes(self, card_names:list[str]) -> pd.DataFrame:
-        return pd.DataFrame(
-            data=[[0 for i in range(len(card_names))]],
-            columns=card_names,
-            index=[0]
-        ).astype(pd.Int8Dtype())
+    def _add_cards(self, deck:Deck, archidekt_id:int) :
+        for arch_card in deck.cards:
+            self.reqhand.post_request(
+                CardCreate(
+                    decklist_id = archidekt_id,
+                    count = arch_card.quantity,
+                    name = arch_card.card.oracle_card.name
+                ).model_dump(), 
+                post_url = self.reqhand.url + '/cards/'
+            )
 
+    def _add_commander(self, deck:Deck, archidekt_id:int):
+        # # commander
+
+        commander_name = self._get_commander(deck)
+        
+        self.reqhand.post_request(
+            # this will not work for partners
+            CommanderCreate(
+                name = commander_name, 
+                decklist_id = archidekt_id
+            ).model_dump(), 
+            post_url = self.reqhand.url + '/commanders/'
+        )
+
+
+class Scraper(_Scraper):
+    
+    def __init__(self, db_url:str):
+        super().__init__(db_url)
+
+    def scrape(self, start:int, stop:int):
+        for archidekt_id in tqdm(range(start, stop)):
+            try:
+                deck = getDeckById(archidekt_id)
+            except:
+                continue
+            if self._is_commander(deck):
+                self._add_commander(deck, archidekt_id)
+                self._add_cards(deck, archidekt_id)
+
+    ###########################
 
     def _iter_cache_data(self, no_iterations:int, batch_size:int) -> None:
         
@@ -112,7 +113,7 @@ class Scraper:
                 os.path.join(cache_dir,'cardname_cache.parquet')
         ).name.tolist() 
         
-        data = scraper._make_umap_zeroes(card_names)
+        data = self._make_umap_zeroes(card_names)
 
         for path in cache_dir_list:
             path = os.path.join(cache_dir, path)
@@ -148,46 +149,14 @@ class Scraper:
         )
 
         return _get_req_to_pandas(
-            scraper.reqhand.get_request(f'/cards/{offset}/{batch_size}/').json(), 
+            self.reqhand.get_request(f'/cards/{offset}/{batch_size}/').json(), 
             card_names # awk here
         )
-    
-    def remove_duplicate_cards(self) -> None:
-        # in the future we can make this get specific decks 
-        # then have some iterable it can iterate through to remove shit
-        def _get_dup_ids_from_request(req:list[dict]) -> list[int]:
-            
-            dup_ids = [i['name'] for i in req]
 
-            dup_ids = [dup_ids.count(j) for j in dup_ids]
-            dup_ids = [
-                i for i in range(len(req)) 
-                if i not in 
-                [ndx for ndx, i in enumerate(dup_ids) if i > 1]
-            ]
-            return dup_ids
-
-        # get a list of all decklist ids
-        deck_ids = self.reqhand.get_request('/cards/deck_id/').json()
-
-        # iterate decklist ids
-        for deck_id in deck_ids:
-            req = self.reqhand.get_request(f'/cards/deck_id/{deck_id}').json()
-
-            # filter to only degenerate instances
-            req = [i for i in req if i in _get_dup_ids_from_request(req)]
-            
-            for card_id in req:
-
-                # delete based on the ids
-                self.reqhand.delete_request(
-                    f'/cards/{card_id}'
-                )
-    
 
 if __name__ == '__main__':
 
     scraper = Scraper(db_url='http://0.0.0.0:8000')
 
-    scraper.remove_duplicate_cards()
+    # scraper.remove_duplicate_cards()
 
